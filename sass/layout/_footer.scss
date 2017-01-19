@@ -1,0 +1,68 @@
+footer {
+  position: relative;
+  min-height: 220px;
+  background-color: $grey-header-third;
+  padding-top: 45px;
+  .about-company {
+    float: left;
+    width: 200px;
+    height: 50px;
+    p {
+      line-height: 22px;
+      color: $white;
+      letter-spacing: 0.3px;
+    }
+  }
+  .menu-footer {
+    margin-left: 150px;
+    float: left;
+    width: 150px;
+    height: 140px;
+    ul {
+      font-size: 0;
+      margin-top: -2px;
+      a {
+        font-size: $fs-base;
+        color: $white;
+        line-height: 26px;
+        text-decoration: underline;
+        letter-spacing: 0.3px;
+      }
+    }
+  }
+  .copyrite-footer {
+    position: relative;
+    float: right;
+    width: 230px;
+    height: 50px;
+    text-align: right;
+    span , p , a {
+      color: $white;
+      line-height: 22px;
+    }
+    span {
+      display: inline-block;
+      margin-right: 55px;
+      letter-spacing: 0.3px;
+      a {
+        text-decoration: underline;
+      }
+    }
+    p {
+      margin-right: 11px;
+      letter-spacing: 0.3px;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      background-image: url('../images/logo-footer.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 36px;
+      height: 38px;
+      left: 3px;
+      bottom: 5px;
+    }
+  }
+}

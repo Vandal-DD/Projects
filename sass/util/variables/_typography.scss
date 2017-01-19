@@ -1,0 +1,60 @@
+// Font-family
+$source-sans-pro: "Source Sans Pro", sans-serif;
+$verdana: "Verdana", sans-serif;
+$font-family-base: $source-sans-pro;// for mixin _reset-text
+// Set variables for font faces here
+
+// Letter spacing
+$ls-xl: 0.1em;
+$ls-lg: 0.06em;
+$ls-md: 0.04em;
+$ls-sm: 0.02em;
+$ls-xs: 0.01em;
+
+// Line height
+$lh-lg-x: 2;
+$lh-lg: 1.6;
+$lh-md: 1.4;
+$lh-xs: 1.2;
+$lh-sm: 1.1;
+
+// COLOR font
+
+
+
+// Font size
+
+
+//14px
+$fs-base: 0.875rem;
+//9px
+$fs-small: 0.55rem;
+//16px
+// 15 px
+$special-logo-size: 0.975rem;
+$fs-title-little: 1rem;
+//18px
+$fs-title-mnor: 1.125rem;
+//20px
+$fs-title-normal: 1.25rem;
+//24px
+$fs-title-middle: 1.500rem;
+//28px
+$fs-title-middle-2: 1.750rem;
+//30px
+$fs-title-extra: 1.875rem;
+//40px
+$fs-large: 2.500rem;
+//48px
+$fs-middle-large: 3rem;
+
+//9px = 0.55rem
+//14px = 0.875rem (base)
+//16px = 1rem
+//18px = 1.125rem
+//19px = 1.267rem
+//20px = 1.25rem
+//21px = 1.3rem
+//31px = 1.95rem
+//44px = 2.69rem
+//48px = 3rem

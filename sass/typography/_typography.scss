@@ -1,0 +1,78 @@
+// Add @font-face or @import rules here
+
+$fonts: '../fonts';
+
+
+@font-face {
+  font-family: "PTSansRegular";
+  src: url("#{$fonts}/PTSansRegular/PTSansRegular.eot");
+  src: url("#{$fonts}/PTSansRegular/PTSansRegular.eot?#iefix")format("embedded-opentype"),
+  url("#{$fonts}/PTSansRegular/PTSansRegular.woff") format("woff"),
+  url("#{$fonts}/PTSansRegular/PTSansRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "PTSansBold";
+  src: url("#{$fonts}/PTSansBold/PTSansBold.eot");
+  src: url("#{$fonts}/PTSansBold/PTSansBold.eot?#iefix")format("embedded-opentype"),
+  url("#{$fonts}/PTSansBold/PTSansBold.woff") format("woff"),
+  url("#{$fonts}/PTSansBold/PTSansBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "OpenSansCondensedLight";
+  src: url("#{$fonts}/OpenSansCondensedLight/OpenSansCondensedLight.eot");
+  src: url("#{$fonts}/OpenSansCondensedLight/OpenSansCondensedLight.eot?#iefix")format("embedded-opentype"),
+  url("#{$fonts}/OpenSansCondensedLight/OpenSansCondensedLight.woff") format("woff"),
+  url("#{$fonts}/OpenSansCondensedLight/OpenSansCondensedLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "OpenSansRegular";
+  src: url("#{$fonts}/OpenSansRegular/OpenSansRegular.eot");
+  src: url("#{$fonts}/OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
+  url("#{$fonts}/OpenSansRegular/OpenSansRegular.woff") format("woff"),
+  url("#{$fonts}/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+$PTSansRegular: "PTSansRegular" , sans-serif;
+$PTSansBold: "PTSansBold" , sans-serif;
+$OpenSansCondensedLight: "OpenSansCondensedLight" , sans-serif;
+
+
+
+
+$shadow-white: 0 1px 0 white;
+
+
+////15px
+//$fs-base: 1rem;
+////17px
+//$fs-title-small: 1.133rem;
+////19px
+//$fs-title-little: 1.267rem;
+////21px
+//$fs-title-middle: 1.4rem;
+////27px
+//$fs-title-extra: 1.8rem;
+////33px
+//$fs-large:2.2rem;
+////49px
+//$fs-middle-large:3.267rem;
+////61px
+//$fs-extra-large:4.067rem;
+//
+//
+////15px = 1rem (base)
+////17px = 1.133rem
+////19px = 1.267rem
+////21px = 1.4rem
+////27px = 1.8rem
+////33px = 2.2rem
+////49px = 3.267rem
+////61px = 4.067rem

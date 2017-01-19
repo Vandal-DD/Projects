@@ -1,0 +1,255 @@
+.menu-header {
+  .cont-menu {
+    position: relative;
+    padding-left: 34px;
+    padding-top: 25px;
+  }
+  .main-menu{
+    font-size: 0;
+    li {
+      display: inline-block;
+      border-right: $border-white;
+      height: 25px;
+      a {
+        line-height: 20px;
+        letter-spacing: 1px;
+        font-size: $fs-title-extra;
+        color: $white;
+        display: inline-block;
+        padding-left: 20px;
+        padding-right: 18px;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      &:nth-child(1) {
+        a {
+          padding-left: 0;
+        }
+      }
+      // ЕСЛИ ДЕЛАТЬ ПО МАКЕТУ
+      //&:nth-child(4) {
+      //  a {
+      //    padding-left: 10px;
+      //    padding-right: 16px;
+      //  }
+      //}
+      &:nth-child(5) {
+        border: none;
+        a {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
+aside {
+  .menu-aside {
+    min-height: 364px;
+  }
+  ul {
+    font-size: 0;
+    .auto {
+      &:hover {
+        padding-bottom: 0;
+      }
+      ul {
+        margin-top: 7px;
+      }
+      span {
+        line-height: 17px;
+      }
+      padding-bottom: 7px;
+    }
+    li {
+      ul {
+        display: none;
+        font-size: 0;
+        margin-top: -2px;
+        li {
+          padding-left: 9px;
+          color: $grey-header-third;
+          font-size: $fs-base;
+          line-height: 22px !important;
+          a {
+            display: inline-block;
+            font-size: $fs-base;
+            line-height: 22px !important;
+            letter-spacing: 0.3px;
+            &:hover {
+              text-decoration: underline;
+              color: $second-black;
+              // ПО МАКЕТУ МОЖНО СДЕЛАТЬ ТК НО ЕЩЁ НЕ ПОДДЕРЖИВАЕТСЯ
+              //text-decoration-line: underline;
+              //text-decoration-style: solid;
+              //text-decoration-color: red;
+            }
+          }
+          //&:before {
+          //  content: "• ";
+          //  color: $grey-header-third;
+          //}
+        }
+      }
+      span {
+        text-transform: capitalize;
+        display: inline-block;
+        color: $grey-header-third;
+        font-size: $fs-title-mnor;
+        line-height: 30px;
+        letter-spacing: 0.3px;
+      }
+      &:hover span {
+        text-decoration: underline;
+      }
+      &:hover ul {
+        display: block;
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+// RESPONSIVE MENu
+.menu-header .res-menu {
+  position: relative;
+  display: none;
+}
+.menu-nav-container {
+  display: none;
+  width: 100%;
+  font-size: 0;
+  background-color: $black-opacity;
+  position: absolute;
+  z-index: 99;
+  padding: 0 10px;
+}
+.menu-nav-container li {
+  position: relative;
+  display: inline-block;
+  width: 33.33333%;
+  height: 35px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.menu-nav-container li a {
+  display: inline-block;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: white;
+  padding: 7px 0;
+}
+.menu-nav-container li a:hover {
+  color: $black;
+  text-decoration: underline;
+}
+.cmn-toggle-switch {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+  text-indent: -9999px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+
+.cmn-toggle-switch:focus {
+  outline: none;
+}
+
+.cmn-toggle-switch span {
+  display: block;
+  position: absolute;
+  top: 19px;
+  left: 4px;
+  right: 4px;
+  height: 2px;
+  background: white;
+}
+
+.cmn-toggle-switch span::before,
+.cmn-toggle-switch span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  content: "";
+}
+
+.cmn-toggle-switch span::before {
+  top: -8px;
+}
+
+.cmn-toggle-switch span::after {
+  bottom: -8px;
+}
+// btn
+.cmn-toggle-switch__htx {
+  background-color: $black;
+}
+
+.cmn-toggle-switch__htx span {
+  -webkit-transition: background 0 0.3s;
+  transition: background 0 0.3s;
+}
+
+.cmn-toggle-switch__htx span::before,
+.cmn-toggle-switch__htx span::after {
+  -webkit-transition-duration: 0.3s, 0.3s;
+  transition-duration: 0.3s, 0.3s;
+  -webkit-transition-delay: 0.3s, 0;
+  transition-delay: 0.3s, 0;
+}
+
+.cmn-toggle-switch__htx span::before {
+  -webkit-transition-property: top, -webkit-transform;
+  transition-property: top, transform;
+}
+
+.cmn-toggle-switch__htx span::after {
+  -webkit-transition-property: bottom, -webkit-transform;
+  transition-property: bottom, transform;
+}
+
+/* active state, i.e. menu open */
+.cmn-toggle-switch__htx.active {
+  background-color: $light-red;
+}
+
+.cmn-toggle-switch__htx.active span {
+  background: none;
+}
+
+.cmn-toggle-switch__htx.active span::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.cmn-toggle-switch__htx.active span::after {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.cmn-toggle-switch__htx.active span::before,
+.cmn-toggle-switch__htx.active span::after {
+  -webkit-transition-delay: 0, 0.3s;
+  transition-delay: 0, 0.3s;
+}

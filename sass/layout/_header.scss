@@ -1,0 +1,103 @@
+header {
+  position: relative;
+  min-height: 310px;
+  .info-header {
+    position: relative;
+    min-height: 230px;
+    background-color: $grey-header;
+  }
+  .cont-logo-header {
+    display: flex;
+    align-items: flex-start;
+    width: 350px;
+    min-height: 100px;
+    float: left;
+    margin-top: 65px;
+    text-align: left;
+    .logo-header {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      background-image: url('../images/logo-first.png');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .info-logo-header {
+      display: inline-block;
+      width: 200px;
+      margin-left: 13px;
+      color: $grey-header-second;
+      h3 {
+        line-height: 24px;
+        font-family: $PTSansBold;
+        font-size: $fs-title-extra;
+        letter-spacing: 1.6px;
+        &:nth-child(1) {
+          margin-top: 7px;
+        }
+      }
+      span {
+        display: inline-block;
+        margin-top: 13px;
+        font-size: $special-logo-size;
+      }
+    }
+  }
+  .cont-feedback-header {
+    width: 350px;
+    min-height: 130px;
+    float: right;
+    margin-top: 35px;
+    color: $grey-header-second;
+    text-align: right;
+    span {
+      display: block;
+      text-align: right;
+    }
+    .telephone {
+      line-height: 46px;
+      font-family: $OpenSansCondensedLight;
+      font-size: $fs-large;
+      color: $grey-header-second;
+      letter-spacing: 1px;
+    }
+    a {
+      display: inline-block;
+      margin-top: 1px;
+      overflow: hidden;
+    }
+    .feedback {
+      display: inline-block;
+      position: relative;
+      line-height: 30px;
+      font-family: $PTSansBold;
+      font-size: $fs-title-middle;
+      color: $grey-header-second;
+      letter-spacing: 0.5px;
+      &:after {
+        display: block;
+        position: absolute;
+        width: 172px;
+        height: 2px;
+        // ПЕРВЫЙ ВАРИАНТ ПРАВИЛЬНЫЙ СО СТОРОНЫ МАКЕТА , НО
+        //ВОЗНИКАЮТ ПРОБЛЕМЫ С КУРСОСРОМ
+        content: '------------------';
+        text-align: center;
+        font-family: "OpenSansRegular" , sans-serif;
+        font-size: $fs-title-middle-2;
+        bottom: 18px;
+        // ВТОРОЙ ВАРИАНТ БОЛЕЕ КРАСИВЫЙ И ПРОСТОЙ И НЕТУ ПРОБЛЕМ С КУРСОРРОМ
+        //content: '';
+        //background-image: url('../images/underline-header.png');
+        //background-repeat: repeat-x;
+        //bottom: 0;
+        right: 0;
+      }
+    }
+  }
+  .menu-header {
+    position: relative;
+    min-height: 80px;
+    background-color: $grey-header-second;
+  }
+}
